@@ -15,7 +15,6 @@ export default function Home() {
           
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
             <a href="#features" className="hover:text-slate-900 transition-colors">Nasıl Çalışır?</a>
-            <a href="#pricing" className="hover:text-slate-900 transition-colors">Paketler</a>
             <a href="#faq" className="hover:text-slate-900 transition-colors">S.S.S.</a>
           </nav>
 
@@ -176,103 +175,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-24 bg-[#FAF9F5]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto flex flex-col gap-4 mb-16">
-            <span className="text-xs font-semibold tracking-wider text-amber-600 uppercase">Fiyatlandırma</span>
-            <h2 className="serif-heading text-3xl sm:text-4xl text-slate-800 font-normal">
-              Etkinliğiniz için en uygun paketi seçin
-            </h2>
-            <p className="text-slate-500 text-sm">
-              Gizli ücretler yok. Sadece tek seferlik ödeme ile düğün albümünüzü kurun.
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8 items-stretch">
-            {/* Standard Plan */}
-            <div className="bg-white border border-[#EAE9E4] rounded-3xl p-8 flex flex-col justify-between premium-card">
-              <div className="flex flex-col gap-4">
-                <h3 className="serif-heading text-xl font-semibold text-slate-800">Başlangıç</h3>
-                <p className="text-slate-400 text-xs">Küçük ve samimi etkinlikler için ideal</p>
-                <div className="my-4">
-                  <span className="serif-heading text-3xl font-semibold text-slate-800">2.490 TL</span>
-                  <span className="text-slate-400 text-xs"> / etkinlik</span>
-                </div>
-                <div className="h-[1px] bg-slate-100 w-full" />
-                <ul className="flex flex-col gap-3 text-slate-500 text-sm pt-2">
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> 1 Adet Özel Etkinlik</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> 500 Fotoğrafa Kadar Yükleme</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> QR Kod Tasarım Çıktısı</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> Yönetim Paneli ve Fotoğraf Silme</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> Toplu ZIP İndirme</li>
-                </ul>
-              </div>
-              <Link 
-                href="/register" 
-                className="mt-8 text-center font-medium bg-slate-50 text-slate-700 hover:bg-slate-100 transition-all rounded-full py-3"
-              >
-                Hemen Başla
-              </Link>
-            </div>
-
-            {/* Premium Plan */}
-            <div className="bg-white border-2 border-amber-600/30 rounded-3xl p-8 flex flex-col justify-between premium-card relative gold-border-glow">
-              <div className="absolute top-0 right-8 -translate-y-1/2 bg-amber-600 text-[#FAF9F5] text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full">
-                En Çok Tercih Edilen
-              </div>
-              <div className="flex flex-col gap-4">
-                <h3 className="serif-heading text-xl font-semibold text-slate-800">Premium</h3>
-                <p className="text-slate-400 text-xs">Eksiksiz bir düğün anı deneyimi</p>
-                <div className="my-4">
-                  <span className="serif-heading text-3xl font-semibold text-slate-800">4.990 TL</span>
-                  <span className="text-slate-400 text-xs"> / etkinlik</span>
-                </div>
-                <div className="h-[1px] bg-slate-100 w-full" />
-                <ul className="flex flex-col gap-3 text-slate-500 text-sm pt-2">
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> 1 Adet Özel Etkinlik</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> 2.000 Fotoğraf & Video Yükleme</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> QR Kod Tasarım Çıktısı</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> Canlı Ekran (Live Slideshow)</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> Herkesin Görebileceği Kamu Galerisi</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> 6 Ay Depolama Garantisi</li>
-                </ul>
-              </div>
-              <Link 
-                href="/register" 
-                className="mt-8 text-center font-medium bg-slate-800 text-[#FAF9F5] hover:bg-slate-700 transition-all rounded-full py-3"
-              >
-                Satın Al & Başla
-              </Link>
-            </div>
-
-            {/* Corporate Plan */}
-            <div className="bg-white border border-[#EAE9E4] rounded-3xl p-8 flex flex-col justify-between premium-card">
-              <div className="flex flex-col gap-4">
-                <h3 className="serif-heading text-xl font-semibold text-slate-800">Kurumsal</h3>
-                <p className="text-slate-400 text-xs">Düğün salonları ve organizasyonlar için</p>
-                <div className="my-4">
-                  <span className="serif-heading text-3xl font-semibold text-slate-800">Teklif Al</span>
-                  <span className="text-slate-400 text-xs"> / yıllık</span>
-                </div>
-                <div className="h-[1px] bg-slate-100 w-full" />
-                <ul className="flex flex-col gap-3 text-slate-500 text-sm pt-2">
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> Sınırsız Etkinlik & Sınırsız Fotoğraf</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> Organizasyon Marka Paneli (White-label)</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> WhatsApp Destek & Özel Tasarım Çıktıları</li>
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-amber-600 shrink-0" /> Detaylı İndirme & Arşiv Analitiği</li>
-                </ul>
-              </div>
-              <a 
-                href="mailto:destek@lamourqr.com?subject=Kurumsal Teklif Talebi" 
-                className="mt-8 text-center font-medium bg-slate-50 text-slate-700 hover:bg-slate-100 transition-all rounded-full py-3"
-              >
-                Bizimle İletişime Geçin
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section id="faq" className="py-24 bg-white border-t border-[#EAE9E4]">

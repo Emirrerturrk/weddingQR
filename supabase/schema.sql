@@ -19,6 +19,11 @@ create policy "Users can update their own profile"
   on public.profiles for update 
   using (auth.uid() = id);
 
+create policy "Users can insert their own profile" 
+  on public.profiles for insert 
+  with check (auth.uid() = id);
+
+
 
 -- 2. Events Table (Weddings/Events created by hosts)
 create table if not exists public.events (
